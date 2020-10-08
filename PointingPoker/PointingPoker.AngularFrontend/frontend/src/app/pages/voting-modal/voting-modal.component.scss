@@ -1,0 +1,19 @@
+.vote-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vote-button{
+    background-color: lightblue;
+    margin-right: 1em;
+    border-radius: 50%;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.vote-text{
+    background: white;
+    border-radius: .5em;
+}

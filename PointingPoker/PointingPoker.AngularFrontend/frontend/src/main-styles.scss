@@ -1,0 +1,69 @@
+// This is where we put global styles and change variable values
+// This is to help code maintainability
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+
+// Background Color Gradient 
+$seafoam: #96DEDA;
+$seaGreen: #50C9C3;
+
+// Box Color Gradient
+$lighterCloud: #fbfcfd;
+$lightCloud: #ffffff;
+
+// Update Bulma's Global Variables
+$family-san-serif: "Nunito", "san-serif";
+$primary: $seaGreen;
+$link: $seafoam;
+
+html {
+    background: linear-gradient(to right, $seafoam, $seaGreen);
+}
+
+html, body {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal-box {
+    min-height: auto;
+    width: auto;
+    max-width: 22em;
+    background: linear-gradient(to left, $lightCloud, $lighterCloud);
+    border-radius: 0.5em;
+    padding: 2em;
+  }
+  
+  .title {
+    font-family: Lato;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  .subtitle {
+    font-family: Lato;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  
+  .white-box {
+    background: linear-gradient(to left, $lightCloud, $lighterCloud);
+    padding: 2em;
+    border-radius: 0.5em;
+    min-height: 30em;
+    max-height: 40em;
+    height: 100%;
+  }
+  
+  
+  
+  @import '../node_modules/bulma/bulma.sass';

@@ -1,0 +1,107 @@
+// Color Variables
+$seabreeze: #c9faf7;
+$seafoamlight: #b8f3f1;
+
+.body{
+    margin: 0;
+}
+.story-container {
+ padding: 4em 3em 6em 7em;
+}
+
+.story-cards-container {
+    min-height: 15em;
+    max-height: 21em;
+    height: 100%;
+    overflow: auto;
+}
+
+.story-card {
+    background: linear-gradient(to right, $seabreeze, $seafoamlight);
+    border-radius: 0.5em;
+    padding: 1em;
+    max-width: 45em;
+    margin: 0 0 1em 0;
+}
+
+.story-text {
+    background: white;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.story-text-column {
+    position: relative;
+}
+
+.current-votes {
+    display: inline;
+    position: absolute;
+    bottom: -0.5em;
+    left: 1em;
+}
+
+.participant-color-identifier{
+    display: inline-block;
+    border-radius: 50%;
+    height: 1.8em;
+    width: 1.8em;
+    margin-right: 0.8em;
+    text-align: center;
+    font-weight: 550;
+    color:white;
+    vertical-align: middle;
+}
+
+.card-buttons {
+    margin: 0;
+    padding: 0.8em 0 0 0;
+    text-align: center
+}
+
+.participant-container {
+    padding: 4em 0em 6em 0em;
+}
+
+.add-story-section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 3em;
+}
+
+.add-new-story {
+    position: absolute;
+    right: 45%;
+    top: 30%;
+}
+
+// ---------------------------- Participant Box Styling ----------------------------------------
+
+.individual-participant-box {
+    display: inline-block;
+    margin-bottom: 1em;
+    background: linear-gradient(to right, $seabreeze, $seafoamlight);
+    width: 85%;
+    text-align: left;
+    border-radius: 0.5em;
+    vertical-align: middle;
+    padding-left: 1em;
+}
+
+.individual-participant-container{
+    overflow: auto;
+    min-height: 15em;
+    max-height: 21em;
+}
+
+.participant-name {
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 0.2em 0.6em 0.2em 0.6em;
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    color: black;
+    vertical-align: middle;
+    font-size: 0.9em;
+}

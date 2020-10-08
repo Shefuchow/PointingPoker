@@ -1,0 +1,61 @@
+<div class="centered-content">
+    <div name="sessionBox" id="sessionBox" class="modal-box center-text">
+
+        <!-- Welcome Message with Join and Create Session Buttons -->
+        <div *ngIf="welcome" class="welcome">
+            <h1 class="title has-text-primary has-text-centered	">
+                Welcome
+            </h1>
+            <div class="buttons width">
+                <p>&nbsp;&nbsp;</p>
+                <button (click)="joinSession()" name="joinSession" id="joinSession" class="button is-primary">
+                    Join Session
+                </button>
+                <button (click)="createSession()"name="createSession" id="createSession" class="button is-info">
+                    Create Session
+                </button>
+            </div>
+        </div>
+
+        <!-- Join Session with Name and existing Session ID Input -->
+        <div *ngIf="joiningSession" class="joiningSession">
+            <h1 class="title has-text-primary has-text-centered	">
+                Join Session
+            </h1>
+            <div class="field">
+                <div class="control">
+                    <input #name class="input is-primary" type="text" placeholder="Enter Name...">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input #session class="input is-info" type="text" placeholder="Enter SessionID...">
+                </div>
+            </div>
+            <br>
+            <div class="buttons has-text-centered">
+                <button (click)="backToWelcome()"class="button is-info is-rounded is-inverted is-small">Back</button>
+                <button (click)="continueToHomepage()" class="button is-info is-rounded is-small">Continue</button>
+            </div>
+        </div>
+
+        <!-- Create Session with Name and Generated Session ID -->
+        <div *ngIf="creatingSession" class="creatingSession">
+            <h1 class="title has-text-primary has-text-centered	">
+                Create Session
+            </h1>
+            <div class="field">
+                <div class="control">
+                    <input #name2 class="input is-primary" type="text" placeholder="Enter Name...">
+                </div>
+            </div>
+            <div class="has-text-centered">
+                <span class="tag is-success is-medium">Created Session: 236</span>
+                <br> <br>
+                <button (click)="backToWelcome()"class="button is-info is-rounded is-inverted is-small">Back</button>
+                <button (click)="continueToHomepage()" class="button is-info is-rounded is-small">Continue</button>
+            </div>
+        </div>
+
+    </div>
+</div>
